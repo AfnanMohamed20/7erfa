@@ -1,0 +1,454 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Tajawal", Arial, sans-serif;
+  background-color: #fffaf7;
+}
+
+nav {
+  background-color: rgb(243, 230, 216);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  opacity: 0.9;
+  backdrop-filter: blur(20px);
+  padding: 10px 16px;
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.menu-icon span {
+  width: 26px;
+  height: 3px;
+  background-color: brown;
+  border-radius: 2px;
+}
+
+.tabs,
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+  color: brown;
+  transition: 0.5s;
+  font-size: 18px;
+}
+a:hover {
+  text-decoration: underline;
+}
+.des {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  text-decoration: none;
+  /* padding-right: 0px; */
+}
+.buttons {
+  padding-left: 20px;
+}
+.login {
+  color: brown;
+  background-color: bisque;
+  border-radius: 10px;
+  border-color: brown;
+  gap: 20px;
+  padding: 7px;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: brown;
+  color: bisque;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  background-color: rgb(234, 223, 211);
+  padding: 24px 16px 32px;
+}
+
+.image {
+  flex: 1 1 420px;
+}
+
+.image img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
+  mask-image: linear-gradient(to right, black 60%, transparent 100%);
+}
+
+.hero_writing {
+  flex: 1 1 380px;
+  color: brown;
+  padding-right: 0;
+  font-family: "Tajawal";
+  font-size: larger;
+}
+
+.hero_writing h1 {
+  margin: 0;
+}
+.hero_buttons {
+  padding-top: 20px;
+  display: flex;
+  gap: 30px;
+  /* gap: 30px; مبتتعملش الا لو كان العنصر flex */
+}
+.section_button {
+  height: 50px;
+  width: 210px;
+  font-size: 20px;
+  font-family: "Tajawal";
+  background-color: rgb(79, 64, 64);
+  color: antiquewhite;
+  border-color: beige;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+.review {
+  background-color: rgb(243, 230, 216);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px 35px;
+  padding-bottom: 30px;
+}
+
+.image_text {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-left: 1px solid #aea499; /* بيعمل الخط الفاصل بس هيعمل واحد زياده على الشمال*/
+  padding-left: 40px;
+}
+/* الكود ده بيقول للمتصفح: المجموعة الأخيرة مـتحطش لها خط */
+
+.image_text:first-of-type {
+  border-left: none;
+  padding-left: 0;
+}
+.image_text i {
+  color: brown;
+  font-size: 28px;
+}
+
+.rev_list1 {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  color: rgb(84, 47, 47);
+  max-width: 120px;
+  font-family: "Tajawal";
+  text-align: center;
+  align-items: center;
+}
+.courses {
+  background-color: whitesmoke;
+  margin-top: 0px;
+  padding: 30px 0;
+}
+.title {
+  text-align: center;
+  font-family: "Tajawal";
+  color: rgb(84, 47, 47);
+}
+.title h2 {
+  padding: 0%;
+}
+.title .title-line {
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: rgb(84, 47, 47);
+  margin: 10px auto 10px; /*auto مسؤل انه يخلى الخط فى النص*/
+  border-radius: 10px;
+}
+.cards {
+  background-color: whitesmoke;
+  padding: 30px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.card1 {
+  flex: 1 1 220px;
+  max-width: 260px;
+  min-height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgb(234, 214, 214);
+  overflow: hidden;
+}
+.card1 img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover; /*بتحمى الصورة من التشويه*/
+  margin-bottom: 0px;
+}
+.card1 h4 {
+  color: rgb(90, 67, 67);
+  text-align: right;
+  padding-right: 20px;
+  font-family: "Tajawal";
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px; /*مبتشتغلش مع justify content: space between*/
+  flex-direction: row-reverse;
+}
+.user i {
+  width: 32px;
+  height: 32px;
+  padding-right: 5px;
+  margin-top: 15px;
+  color: brown;
+}
+.price {
+  color: brown;
+  padding-left: 10px;
+}
+.view_courses {
+  text-align: center;
+  margin-top: 30px;
+}
+.courses_button {
+  height: 50px;
+  width: 230px;
+  font-size: 20px;
+  font-family: "Tajawal";
+  background-color: rgb(79, 64, 64);
+  color: antiquewhite;
+  border-color: beige;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+.crafts {
+  background-color: rgb(243, 230, 216);
+}
+.craft_dad {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0 16px;
+  margin-top: 30px;
+}
+.craft_child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1 1 110px;
+  min-height: 70px;
+  max-width: 140px;
+  background-color: rgb(209, 188, 164);
+  border-radius: 10px;
+}
+.craft_child i {
+  font-size: 28px;
+}
+.view {
+  height: 50px;
+  width: 190px;
+  font-size: 20px;
+  font-family: "Tajawal";
+  background-color: antiquewhite;
+  color: rgb(79, 64, 64);
+  border-color: 79, 64, 64;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+.subTitle {
+  text-align: center;
+}
+.about_image {
+  background-image: url(back\ bnr.png);
+  background-size: cover;
+}
+
+.write {
+  text-align: right;
+  padding-right: 230px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  font-size: larger;
+  font-family: "Tajawal";
+  color: rgb(78, 55, 55);
+}
+
+.footer {
+  background-color: rgb(243, 230, 216);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 16px 35px 30px;
+  opacity: 0.9;
+  backdrop-filter: blur(35px);
+  margin-top: 30px;
+}
+
+.foot {
+  flex: 1 1 180px;
+}
+.begin {
+  width: 200px;
+  font-size: large;
+}
+.list {
+  list-style: none;
+  text-decoration: none;
+  padding-left: 0px;
+  color: rgb(49, 38, 38);
+}
+li {
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero_writing {
+    text-align: center;
+  }
+
+  .hero_buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .review,
+  .footer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .tabs {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0 4px;
+    order: 4;
+    background: rgba(243, 230, 216, 0.98);
+    border-radius: 10px;
+  }
+
+  .menu-toggle:checked ~ .tabs {
+    display: flex;
+  }
+
+  .buttons,
+  .hero_buttons {
+    justify-content: center;
+  }
+
+  .buttons {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .image_text {
+    border-left: none;
+    border-top: 1px solid #aea499;
+    padding-left: 0;
+    padding-top: 12px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image_text:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .write {
+    padding-right: 16px;
+    padding-left: 16px;
+    text-align: center;
+    
+
+  }
+  .write h1 {
+    text-align: center;
+    color: rgb(33, 18, 18);
+  }
+  .write p {
+    text-align: center;
+    color: rgb(46, 30, 30);
+    font-weight: bold;
+  }
+  .footer {
+    text-align: center;
+  }
+  .image {
+    flex: 1 1 200px;
+}
+
+}
