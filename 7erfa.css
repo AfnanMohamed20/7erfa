@@ -357,6 +357,37 @@ li {
   margin-top: 10px;
 }
 
+.sitemap-page {
+  padding: 40px 16px;
+  background: linear-gradient(135deg, #fffaf7 0%, #f3e6d8 100%);
+  min-height: calc(100vh - 120px);
+}
+
+.sitemap-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(84, 47, 47, 0.12);
+  padding: 32px;
+  color: rgb(84, 47, 47);
+  font-family: "Tajawal";
+}
+
+.sitemap-card h1 {
+  color: brown;
+  margin-top: 0;
+}
+
+.sitemap-card ul {
+  padding-right: 20px;
+}
+
+.sitemap-card a {
+  color: brown;
+  font-size: 18px;
+}
+
 @media (max-width: 1024px) {
   section {
     flex-direction: column;
@@ -432,8 +463,6 @@ li {
     padding-right: 16px;
     padding-left: 16px;
     text-align: center;
-    
-
   }
   .write h1 {
     text-align: center;
@@ -449,6 +478,5 @@ li {
   }
   .image {
     flex: 1 1 200px;
-}
-
+  }
 }
